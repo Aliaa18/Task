@@ -11,3 +11,299 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+.group {
+  border-color: black;
+  overflow-y: scroll;
+  height: 85vh;
+  margin-left: 0%;
+  margin-right: 3mm;
+  margin-top: 1cm;
+  padding: 0%;
+  background-color: rgb(201, 223, 238);
+}
+
+ul {
+  padding-left: 7%;
+}
+
+
+.contents {
+  text-align: center;
+  padding-left: 10%;
+}
+
+
+
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-bottom: 1.5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+iframe {
+  border: 2px solid gray;
+}
+
+
+.MuiDialogContent-root {
+  padding: 8px 20px;
+}
+
+.MuiDialog-container {
+  height: min-content;
+}
+
+#loader-text {
+  color: #000;
+  position: fixed;
+  z-index: 9999;
+  font-family: arial, sans-serif;
+}
+
+.loader-text:after {
+  content: "Loading";
+  animation: load 2s linear infinite;
+  left: 43%;
+  top: 55%;
+  position: fixed;
+  font-size: 20px;
+}
+
+#cover-spin {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#cover-spin::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 47%;
+  top: 48%;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+  border-top-color: transparent;
+  border-width: 4px;
+  border-radius: 50%;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
+}
+
+
+.btns-container {
+  margin: 0;
+  position: absolute;
+  padding: 4px;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#btns {
+  position: relative;
+  height: 40px;
+  padding: 4px;
+  margin: 0px;
+}
+
+.btn {
+  display: inline-block;
+  margin: auto 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 22%;
+  font-size: large;
+}
+
+
+.search {
+  margin-top: 43px;
+  -moz-appearance: none;
+}
+
+.titlesRow {
+  font-size: "28px";
+  background-color: "black";
+  color: "black";
+}
+
+.loader {
+  width: 60px;
+}
+
+@keyframes load {
+  0% {
+    content: "Loading Objects";
+  }
+  33% {
+    content: "Loading Objects.";
+  }
+  67% {
+    content: "Loading Objects..";
+  }
+  100% {
+    content: "Loading Objects...";
+  }
+}
+
+.notification-container--bottom-right {
+  margin-bottom: 30px;
+}
+
+.notification-container--bottom-left {
+  margin-bottom: 30px;
+}
+
+.react-confirm-alert-body-element {
+  margin-top: 0px;
+}
+.react-confirm-alert-body {
+  color: black;
+  background: darkgrey;
+  border: solid 2px black;
+}
+
+.react-confirm-alert-overlay {
+  background-color: none;
+  opacity: 0;
+}
+
+.my-cool-select-top .Creatable-menu-outer {
+  top: 100%;
+  bottom: auto;
+}
+
+#uploading-text {
+  color: #000;
+  position: fixed;
+  font-family: arial, sans-serif;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#uploading-text:after {
+  content: "Loading";
+  animation: upload 2s linear infinite;
+  left: 45%;
+  top: 55%;
+  position: fixed;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+
+@keyframes upload {
+  0% {
+    content: "uploading";
+  }
+  33% {
+    content: "uploading.";
+  }
+  67% {
+    content: "uploading..";
+  }
+  100% {
+    content: "uploading...";
+  }
+}
+
+#processing-text {
+  color: #000;
+  position: fixed;
+  font-family: arial, sans-serif;
+}
+
+#processing-text:after {
+  content: "Loading";
+  animation: process 2s linear infinite;
+  left: 45%;
+  top: 55%;
+  position: fixed;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+
+@keyframes process {
+  0% {
+    content: "processing";
+  }
+  33% {
+    content: "processing.";
+  }
+  67% {
+    content: "processing..";
+  }
+  100% {
+    content: "processing...";
+  }
+}
+
+.required::before {
+  content: "* ";
+  color: red;
+}
+
+.homebtn {
+  display: block;
+  width: 250px;
+  height: 150px;
+  margin: 30px 10px;
+  border-radius: 35px;
+  background: steelblue;
+  font-size: xxx-large;
+  font-family: serif;
+}
+
+.MuiAppBar-root {
+  width: auto;
+  
+}
+
+/* .MuiToolbar-root {
+  align-items: baseline;
+  padding-top: 10px;
+}  */

@@ -1,0 +1,37 @@
+.css-1oqqzyl-MuiContainer-root {
+    max-width: 1700px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin-left: 2px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  /* grid.css */
+
+
+  /* Ensure toolbar buttons are styled correctly */
+  .MuiDataGrid-toolbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #F8F9FA; /* Background color for the toolbar */
+  }
+  
+  .MuiDataGrid-toolbarContainer button {
+    margin-right: 8px; /* Adjust spacing between buttons if needed */
+    cursor: pointer;
+    background-color: transparent; /* Ensure buttons have a transparent background */
+    border: none;
+    outline: none;
+    color: #000; /* Text color for buttons */
+  }
+  
+  .MuiDataGrid-toolbarContainer button:hover {
+    background-color: #E0E0E0; /* Background color on hover */
+  }
+  
+  /* Additional styling for pagination or other components as needed */
+  
